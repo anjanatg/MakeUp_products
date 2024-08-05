@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/image3.jpeg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image5.jpeg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/frontimg.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br><br>
+
+<div class="card-group" >
+  <div class="card" >
+    <img src="{% static 'images/card.jpg' %}" class="card-img-top" alt="...">
+  </div>
+  <div class="card">
+    <img src="{% static 'images/card1.jpg' %}" class="card-img-top" alt="...">
+  </div>
+  <div class="card">
+    <img src="{% static 'images/card3.jpg' %}" class="card-img-top" alt="...">
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">Card title</h5>-->
+<!--      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>-->
+<!--      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--    </div>-->
+  </div>
+</div><br><br>
+
+
+<div class="row ">
+    <center><h1>--BESTSELLERS--</h1></center><br><br><br>
+        <br><div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/lake.jpg' %}" class="card-img-top"><hr>
+        <div class="card-body">
+            <h5 class="card-title">LAKME</h5>
+            <p class="card-text">Lakme 9 to 5 CC Cream Mini, 01 - Beige, Light Face Makeup with Natural Coverage, SPF 30 - Tinted Moisturizer to Brighten Skin, Conceal Dark Spots, 9 g.</p>
+            <a href="#" class="btn btn-dark"  style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/mars.jpg' %}" class="card-img-top"><hr>
+                <div class="card-body">
+                    <h5 class="card-title">MARS</h5>
+                    <p class="card-text">MARS 12 Shades Back to Basics Eyeshadow Palette with Free Applicator,Matte,Beginner Friendly & Long Lasting Eye Shadow Palette(14.4 gm) (Shade-02).</p>
+                    <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/Maybelline.jpg' %}" class="card-img-top"><hr>
+                <div class="card-body">
+                    <h5 class="card-title">Maybelline</h5>
+                    <p class="card-text">Maybelline Fit Me Liquid Concealer Makeup, Natural Coverage, Oil-Free, Honey,Smooth foundation with SPF 18, Matte + Poreles 0.23 fl oz.</p>
+                    <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/blush.jpg' %}" class="card-img-top"><hr>
+                <div class="card-body">
+                    <h5 class="card-title">Kay Beauty</h5>
+                    <p class="card-text">Kay Beauty Matte Blush - Soft Nude (8.5gm),Lightweight Formula, it a High Definition,long lasting, Enriched with Vitamin E & Hyaluronic Acid.</p>
+                    <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+</div><br><br><br><br>
+<center><h1>--SKINCARE--</h1></center><br><br>
+<div class="card mb-3" style="margin-left:50px;margin-right:40px;">
+  <img src="{% static 'images/skincare.png' %}" style="height:550px" class="card-img-top" alt="...">
+</div>
+
+<div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/facecream.jpg' %}" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Bio:cule</h5>
+            <p class="card-text">Ever Glow Foaming Face Wash-100ml, Ever Glow Radiance Serum-30ml, Glow Radiance Toner-100ml.</p>
+            <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/dk.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Dot & Key</h5>
+                    <p class="card-text">Hyaluronic & 5 essential Ceramides for Sensitive, Dry Skin  FACE WASH 100ML, FACE CREAM 100GM.</p>
+                    <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/seek.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Seek</h5>
+                    <p class="card-text">seek foaming face wash matcha (70ml),seek sunscreen serum spf 47+,seek cream moisturiser (50gm).</p>
+                    <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/chpskin.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lotus</h5>
+                    <p class="card-text">lotus splash cleaner,ashwagandha bounce moisturiser,turmeric shield sunscreen serum all skin type.</p>
+                    <a href="#" class="btn btn-dark" style="width:250px;">BUY IT NOW</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+<hr><br><center><h1>--BRANDS--</h1></center>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/name.jpg' %}" class="d-block w-100" style="height:250px;width:1100px" alt="...">
+    </div>
+  </div>
+</div><br><hr><br>
+
+<div class="card-group" style="margin-left:0px;margin-right:70px;margin-top:50px;margin-bottom:0px">
+  <div class="row">
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg1.jpg' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg2.jpg' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg3.jpg' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg4.jpg' %}" class="card-img-top" alt="...">
+    </div>
+  </div>
+  <div class="row"style="margin-top:0px;">
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg5.jpg' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg6.jpg' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg8.jpg' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="card col-md-3">
+      <img src="{% static 'images/cardimg7.jpg' %}" class="card-img-top" alt="...">
+    </div>
+  </div>
+</div><br>
+<div><center>
+    <button type="button" class="btn btn-primary btn-lg">Show More</button></center>
+</div><br><br><br>
+
+
+{% endblock %}

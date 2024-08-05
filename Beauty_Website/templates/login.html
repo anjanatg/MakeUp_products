@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+  <div class="row" style="height: 400px;width: 900px;margin-bottom: 50px;margin-left: 130px;">
+    <div class="col-md-6" style="background-color: #78a8f0;padding: 10%;">
+      <h1 style="font-size: 55px">Login</h1>
+      <p style="font-size: 18px">Get access to your Orders, Wishlist and Recommendations</p>
+    </div>
+    <div class="col-md-6" style="background-color: #e8eaed;padding: 5%;">
+      <form method="POST" action="">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input type="text" class="form-control" name="n" placeholder="Enter the name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" name="p" placeholder="Enter the password">
+        </div>
+        <center><button type="submit" class="btn btn-primary">Submit</button></center><br><br>
+        <p class="new-account">
+          New to MakeUp? <a href="{% url 'MakeUp:register' %}">Create an account</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

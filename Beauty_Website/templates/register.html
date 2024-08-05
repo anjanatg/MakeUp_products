@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!--<div class="card bg-dark text-white">-->
+<!--    <img src="{% static 'images/bg.jpeg' %}" class="card-img" alt="...">-->
+<!--  <div class="card-img-overlay">-->
+<!--    <form method="POST">-->
+<!--    <h1>Register page</h1>-->
+
+<!--        {% csrf_token %}-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">User name</label>-->
+<!--            <input type="text" class="form-control" style="background-color: rgba(255, 0, 0, 0.3);" name="n" placeholder="Enter the username">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Last name</label>-->
+<!--            <input type="text" class="form-control border-bottom" name="nl" placeholder="Enter the Lastname">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Password</label>-->
+<!--            <input type="password" class="form-control" name="p" placeholder="Enter the password">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Confirm Password</label>-->
+<!--            <input type="password" class="form-control" name="cp" placeholder="Enter the confirm password">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Email</label>-->
+<!--            <input type="email" class="form-control" name="e" placeholder="Enter the email">-->
+<!--        </div>-->
+<!--        <center><button type="submit" class="btn btn-primary">Submit</button></center>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+<!--  <div class="row" style="height: 300px;width: 800px;margin-bottom: 100px;margin-left: 130px;">-->
+<!--    <div class="col-md-6" style="">-->
+<!--        <img src="{% static 'images/bg.jpeg' %}" class="card-img" alt="..." style="opacity: 0.8;">-->
+<!--    </div>-->
+<!--    <div class="col-md-6" style="background-color: #e8eaed;padding: 5%;">-->
+<!--      <form method="POST" >-->
+<!--      <h1>Register page</h1>-->
+
+<!--        {% csrf_token %}-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">User name</label>-->
+<!--            <input type="text" class="form-control" style="background-color: rgba(255, 0, 0, 0.3);" name="n" placeholder="Enter the username">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Last name</label>-->
+<!--            <input type="text" class="form-control border-bottom" name="nl" placeholder="Enter the Lastname">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Password</label>-->
+<!--            <input type="password" class="form-control" name="p" placeholder="Enter the password">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Confirm Password</label>-->
+<!--            <input type="password" class="form-control" name="cp" placeholder="Enter the confirm password">-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label class="form-label">Email</label>-->
+<!--            <input type="email" class="form-control" name="e" placeholder="Enter the email">-->
+<!--        </div>-->
+<!--        <center><button type="submit" class="btn btn-primary">Submit</button></center>-->
+<!--    </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+<div class="container-fluid" style="position: relative; margin-bottom: 60px; width: 550px; padding: 60px; margin: auto; margin-top: 30px; background-color: #e8eaed">
+    <form method="POST" >
+    <h1>Register page</h1>
+
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">User name</label>
+            <input type="text" class="form-control"  name="n"style="border-radius: 22px;" placeholder="Enter the username">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Last name</label>
+            <input type="text" class="form-control border-bottom" style="border-radius: 22px;"  name="nl" placeholder="Enter the Lastname">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="p"style="border-radius: 22px;" placeholder="Enter the password">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" name="cp" style="border-radius: 22px;" placeholder="Enter the confirm password">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="e" style="border-radius: 22px;" placeholder="Enter the email">
+        </div>
+        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+    </form></div>
+</div>
+
+
+{% endblock %}

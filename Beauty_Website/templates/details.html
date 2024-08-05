@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card mb-3" style="max-width: 1000px; margin-left: 150px;margin-top: 40px">
+  <div class="row g-0">
+    <div class="col-md-4" style="padding-bottom: 30px">
+      <img src="{{ p.image.url }}" class="img-fluid rounded-start border" alt="{{ f.sname }}" style="height: 400px; width: 900px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title">{{ p.name }}</h3>
+        <p class="card-text">{{ p.desc }}</p>
+        <p class="card-text text-success">Special price</p>
+        <p class="card-text">Price: ₹{{ p.price }}</p>
+        <label class="text-secondary">(MRP incl. of all taxes)</label><br><br><br>
+        <div>
+          <a href="{% url 'cart:addtocart' p.name %}" class="btn btn-dark mx-2" style="width: 250px; height: 50px; font-size: 19px;">Add to Cart</a>
+          <a href="{% url 'cart:orderform' %}" class="btn btn-dark" style="width: 250px; height: 50px; font-size: 19px;">BUY</a>
+        </div>
+        <!-- Additional details if needed -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

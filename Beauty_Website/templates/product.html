@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 sidebar border" >
+        <div class="p-4">
+          <h4>Eye Products</h4>
+          <div class="category-card">
+            {% for i in r %}
+            <a href="{% url 'MakeUp:allproducts' i.name %}" class="btn ">{{i.name}}</a><hr>
+            {% endfor %}
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- Main content -->
+      <main class="col-md-10 content">
+        <div class="row">
+          {% for i in p %}
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 350px;margin-bottom:40px">
+            <img src="{{ i.image.url }}" class="card-img-top img-fluid border" alt="{{ i.name }}" style="height: 300px;">
+            <div class="card-body">
+              <h3 class="card-title">{{i.name}}</h3>
+              <p class="card-text" style="height: 120px">{{ i.desc }}</p>
+              <h6 style="height: 40px">Price: {{ i.price }}</h6>
+              <div class="mt-auto d-flex justify-content-start align-items-center">
+                <a href="" class="btn btn-dark mx-2" style="width: 250px; height: 50px; font-size: 19px;">Add to Cart</a>
+                <a href="{% url 'MakeUp:detail' i.name %}" class="btn btn-dark" style="width: 250px; height: 50px; font-size: 19px;">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+{% endblock %}
